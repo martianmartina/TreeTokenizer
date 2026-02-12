@@ -13,7 +13,6 @@ __pycache__/
 *.pkl
 *.pt
 *.txt
-*.json
 *.jsonl
 *.jsonl.gz
 *.jsonl.gz.part

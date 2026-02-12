@@ -43,7 +43,8 @@ elif args.tokenizer == 'wpc':
     tokenizer = Tokenizer(WordPiece(unk_token = unk_token))
     if args.continuing_subword_prefix:
         trainer = WordPieceTrainer(vocab_size=args.vocab_size,
-                                    special_tokens = spl_tokens
+                                    special_tokens = spl_tokens,
+                                    continuing_subword_prefix="##"
                                     )    
     else:
         trainer = WordPieceTrainer(vocab_size=args.vocab_size, 
